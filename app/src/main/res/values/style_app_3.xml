@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--app3  的style -->
+    <!--主界面的drawer的left的线性布局-->
+    <style name="drawer_left_parent">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_height</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <!--drawer  left的text view-->
+    <style name="drawer_left_child">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/textsize_2</item>
+        <item name="android:textColor">@color/textcolor_3_black_2</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--&lt;!&ndash;添加租客合同用到&ndash;&gt;-->
+
+    <!--<style name="check_radio">-->
+        <!--<item name="android:layout_width">0dp</item>-->
+        <!--<item name="android:textColor">@color/radiobutton_text_color</item>-->
+        <!--<item name="android:background">@null</item>-->
+        <!--<item name="android:button">@null</item>-->
+        <!--<item name="android:elevation">@dimen/dp1</item>-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:textSize">@dimen/textsize_3</item>-->
+    <!--</style>-->
+
+</resources>

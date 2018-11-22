@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><!--给原来的老的titlebar 用的布局-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@id/tvTitleId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/item_bg_3"
+            android:contentDescription="titletext"
+            android:gravity="center"
+            android:maxEms="6"
+            android:text="添加房源"
+            android:textColor="@color/textcolor_3_black_1"
+            android:textSize="19sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_right"
+            android:paddingRight="@dimen/padding_right">
+
+            <ImageView
+                android:id="@id/ivBackId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="back按键"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_back"
+                android:tint="@color/textcolor_3_black_1"
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@id/tvOneId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="tvone"
+                android:textColor="@color/textcolor_titlebar_right"/>
+
+            <TextView
+                android:id="@id/tvTwoId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_right"
+                android:contentDescription="tvtwo"
+                android:textColor="@color/textcolor_titlebar_right"/>
+
+            <ImageView
+                android:id="@id/ivOneId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_right"
+                android:contentDescription="ivone"
+                android:scaleType="centerInside"
+                android:tint="@color/textcolor_3_black_3"/>
+
+            <ImageView
+                android:id="@id/ivTwoId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_right"
+                android:contentDescription="ivtwo"
+                android:scaleType="centerInside"
+                android:tint="@color/textcolor_3_black_3"/>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

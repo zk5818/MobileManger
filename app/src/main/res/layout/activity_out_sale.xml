@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                style="@style/app3_linear_container1"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:paddingBottom="@dimen/app3_50dp">
+
+                <LinearLayout style="@style/app3_linear_container2">
+
+
+                    <LinearLayout
+                        android:id="@+id/llShouldSolveTime"
+                        style="@style/hetongxiangqing_linearlayout"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/h3"
+                            style="@style/app3_left_text"
+                            android:minWidth="@dimen/left_text_width"
+                            android:text="产品名称 *" />
+
+                        <EditText
+                            android:id="@+id/etName"
+                            style="@style/hetongxiangqing_edittext"
+                            android:editable="true"
+                            android:enabled="true"
+                            android:hint="请输入产品名称"
+                            android:textColor="@color/c_737373" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/hetongxiangqing_linearlayout"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/h4"
+                            style="@style/app3_left_text"
+                            android:minWidth="@dimen/left_text_width"
+                            android:text="进价(元) *" />
+
+                        <EditText
+                            android:id="@+id/etInPrice"
+                            style="@style/hetongxiangqing_edittext"
+                            android:editable="true"
+                            android:enabled="true"
+                            android:hint="请输入进价"
+                            android:inputType="number"
+                            android:textColor="@color/c_737373" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/hetongxiangqing_linearlayout"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/h5"
+                            style="@style/app3_left_text"
+                            android:minWidth="@dimen/left_text_width"
+                            android:text="售价(元) *" />
+
+                        <EditText
+                            android:id="@+id/etOutPrice"
+                            style="@style/hetongxiangqing_edittext"
+                            android:editable="true"
+                            android:enabled="true"
+                            android:hint="请输入入店成本价"
+                            android:inputType="number"
+                            android:textColor="@color/c_737373" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/hetongxiangqing_linearlayout"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:textSize="@dimen/font_size_13"
+                            android:id="@+id/h6"
+                            style="@style/app3_left_text"
+                            android:inputType="number"
+                            android:minWidth="@dimen/left_text_width"
+                            android:text="其他利润(元)*" />
+
+                        <EditText
+                            android:id="@+id/etOtherIn"
+                            style="@style/hetongxiangqing_edittext"
+                            android:editable="true"
+                            android:enabled="true"
+                            android:hint="请输入数量"
+                            android:inputType="number"
+                            android:textColor="@color/c_737373" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/hetongxiangqing_linearlayout"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/h7"
+                            style="@style/app3_left_text"
+                            android:inputType="number"
+                            android:minWidth="@dimen/left_text_width"
+                            android:text="出售日期*" />
+
+                        <TextView
+                            android:id="@+id/tvDataTime"
+                            style="@style/hetongxiangqing_edittext"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:editable="true"
+                            android:enabled="true"
+                            android:hint="请选择出售时间"
+                            android:textColor="@color/c_737373" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hetongxiangqing_linearlayout"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/app3_left_text"
+                            android:minWidth="@dimen/left_text_width"
+                            android:paddingLeft="15dp"
+                            android:text="总入账"
+                            android:textSize="@dimen/font_size_19" />
+
+                        <TextView
+                            android:id="@+id/tvTotalMoney"
+                            style="@style/hetongxiangqing_edittext"
+                            android:enabled="true"
+                            android:gravity="end|center_vertical"
+                            android:text="￥0.0"
+                            android:textColor="@color/c_59ACFF"
+                            android:textSize="@dimen/font_size_19" />
+                    </LinearLayout>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/app3_left_text"
+                            android:minWidth="@dimen/left_text_width"
+                            android:paddingLeft="15dp"
+                            android:text="盈利"
+                            android:textSize="@dimen/font_size_19" />
+
+                        <TextView
+                            android:id="@+id/tvTotalIn"
+                            style="@style/hetongxiangqing_edittext"
+                            android:enabled="true"
+                            android:gravity="end|center_vertical"
+                            android:text="￥0.0"
+                            android:textColor="@color/c_42B377"
+                            android:textSize="@dimen/font_size_19" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/app3_linear_container1"
+                    android:showDividers="none">
+
+                    <TextView
+                        style="@style/app3_textTitle"
+                        android:text="销售备注"
+                        android:textColor="@color/c_737373" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="@dimen/padding_right"
+                        android:paddingRight="@dimen/padding_right">
+
+                        <EditText
+                            android:id="@+id/etRemarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/shape_round_4_white"
+                            android:gravity="top"
+                            android:hint="请填写销售备注(非必填)"
+                            android:maxLength="50"
+                            android:padding="5dp"
+                            android:textColor="@color/c_737373"
+                            android:textColorHint="@color/prompt_text_color"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvETLength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|bottom"
+                            android:layout_margin="@dimen/msg_size"
+                            android:maxLength="100"
+                            android:text="0/100"
+                            android:textColor="@color/prompt_text_color" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/doComfirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:background="@color/c_59ACFF"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/c_FFFFFF"
+            android:textSize="17sp" />
+    </FrameLayout>
+</LinearLayout>

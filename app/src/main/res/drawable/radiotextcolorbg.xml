@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<item android:state_focused="false" android:state_enabled="true" android:state_pressed="false"-->
+        <!--android:color="@drawable/clr_pressed" />-->
+    <!--<item android:state_enabled="false" android:color="@drawable/clr_normal" />-->
+    <!--<item android:state_pressed="true" android:color="@drawable/clr_pressed" />-->
+    <!--<item android:state_focused="true"  android:color="@drawable/clr_pressed" />-->
+<!--</selector>-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:color="@color/color_181818"
+    android:state_checked="false" />
+<item android:color="@color/purplelight"
+    android:state_checked="true" />
+</selector>

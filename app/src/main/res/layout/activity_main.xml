@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_backgroud"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:contentDescription="标题栏"
+            android:gravity="center_vertical"
+            app:cardElevation="1.5dp">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/item_bg_3"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <ImageView
+                    android:id="@+id/drawer"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_liantong"
+                    android:tint="@color/color_2095f2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="东辉代理店"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/item_bg_3"
+        android:clickable="true"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_slip_title" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="淀山湖老街联通营业厅" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/padding_right"
+            android:layout_marginRight="@dimen/padding_right"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:divider="@drawable/divider_transparent"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <com.kery.mobilemanager.wight.RippleLinearLayout
+                android:id="@+id/huiyuanjieshao"
+                style="@style/drawer_left_parent">
+
+                <TextView
+                    android:id="@+id/tvMemberIntroduce"
+                    style="@style/drawer_left_child"
+                    android:drawableLeft="@drawable/me_icon_huiyuan"
+                    android:text="使用介绍" />
+
+                <TextView
+                    android:id="@+id/huiyuan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_right"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="@dimen/textsize_4" />
+            </com.kery.mobilemanager.wight.RippleLinearLayout>
+
+
+            <com.kery.mobilemanager.wight.RippleLinearLayout
+                android:id="@+id/aboutUs"
+                style="@style/drawer_left_parent">
+
+                <TextView
+                    style="@style/drawer_left_child"
+                    android:drawableLeft="@drawable/me_icon_guanyuwomen"
+                    android:text="关于我们" />
+            </com.kery.mobilemanager.wight.RippleLinearLayout>
+
+            <com.kery.mobilemanager.wight.RippleLinearLayout
+                android:id="@+id/settting"
+                style="@style/drawer_left_parent">
+
+                <TextView
+                    style="@style/drawer_left_child"
+                    android:drawableLeft="@drawable/setup"
+                    android:text="设置" />
+            </com.kery.mobilemanager.wight.RippleLinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="仅限东辉代理店使用" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/temp"
+        android:layout_width="0.1px"
+        android:layout_height="0.1px"></FrameLayout>
+</android.support.v4.widget.DrawerLayout>

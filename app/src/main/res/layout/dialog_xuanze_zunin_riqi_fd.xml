@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:divider="@drawable/divider_hetongxiangqing"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app3_50dp"
+        android:layout_marginBottom="@dimen/dp0.5"
+        android:background="@android:color/white"
+        android:elevation="@dimen/dp1">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="营业时间"
+            android:textColor="@color/textcolor_3_black_1"
+            android:textSize="@dimen/textsize_2" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/ripple_dianbiao_item_jizhongshi_bg"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/textcolor_titlebar_right" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_right"
+        android:paddingRight="@dimen/padding_right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app3_item_height">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="开始时间" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="结束时间" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp">
+
+            <!--android:spinnersShown="false"-->
+            <DatePicker
+                android:id="@+id/picker_start_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:solidColor="@android:color/white" />
+
+            <DatePicker
+                android:id="@+id/picker_end_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:solidColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,271 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@mipmap/pic_flash
+        </item><!--这儿也很重要啊，我这儿用了一张透明的.9.png的图，当然用#00000000也是可以的，否则的话这儿出来后有一个黑色的背景-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+    </style>
+
+    <style name="hetongxiangqing_inner_container_copy">
+        <item name="android:divider">@drawable/divider_hetongxiangqing</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="hetongxiangqing_inner_container_child" parent="hetongxiangqing_inner_container_copy">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!--app3的线性布局容器1   divider是10dp的透明drawable-->
+    <style name="app3_linear_container1" parent="hetongxiangqing_inner_container_child">
+        <item name="android:divider">@drawable/divider_app3_linear1</item>
+    </style>
+    <!--app3的线性布局容器1   divider是0.5dp的左边paddingleft为15dp的drawable-->
+    <style name="app3_linear_container2" parent="hetongxiangqing_inner_container_copy">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:divider">@drawable/divider_hetongxiangqing1</item>
+        <item name="android:paddingLeft">@dimen/padding_right</item>
+    </style>
+
+    <dimen name="textsize_1">19sp</dimen>
+    <dimen name="textsize_2">16sp</dimen>
+    <dimen name="textsize_3">15sp</dimen>
+    <dimen name="textsize_4">13sp</dimen>
+
+    <style name="TextBaseStyle">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="hetongxiangqing_left_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/c_737373</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="app3_left_text" parent="hetongxiangqing_left_text">
+        <item name="android:minWidth">@dimen/dp100</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="window_bottom_in_out">
+        <item name="android:windowEnterAnimation">@anim/window_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/window_bottom_out</item>
+    </style>
+    <style name="hetongxiangqing_linearlayout">
+        <item name="android:background">@drawable/ripple_dianbiao_item_jizhongshi_bg</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/app3_item_height</item>
+        <item name="android:paddingRight">@dimen/padding_right</item>
+    </style>
+
+    <style name="hetongxiangqing_edittext">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/prompt_text_color</item>
+        <item name="android:textColor">@color/textcolor_3_black_1</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:editable">false</item>
+    </style>
+
+    <style name="TextViewBaseStyle" parent="TextBaseStyle">
+        <item name="android:textColor">@color/color_181818</item>
+    </style>
+
+    <style name="app3_textTitle" parent="app3_left_text">
+        <item name="android:paddingLeft">@dimen/padding_right</item>
+        <item name="android:layout_height">@dimen/app3_item_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/textsize_2</item>
+        <item name="android:textColor">@color/textcolor_3_black_1</item>
+    </style>
+
+    <style name="EditTextBaseStyle" parent="TextBaseStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:textColor">@color/color_181818</item>
+        <item name="android:background">@drawable/edittext_style</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="EditTextBaseStyle1" parent="TextBaseStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_181818</item>
+        <item name="android:background">@drawable/edittext_style</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="ButtonBaseStyle" parent="TextBaseStyle">
+        <item name="android:background">@drawable/button_style</item>
+    </style>
+
+    <style name="ButtonWithRightAngleStyle" parent="ButtonBaseStyle">
+        <item name="android:background">@drawable/button_with_right_angle</item>
+    </style>
+
+    <style name="HorizontalLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/color_d8d8d8</item>
+    </style>
+
+    <style name="VerticalLineStyle">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_a8a8a8</item>
+    </style>
+
+    <!--tabs.xml-->
+    <style name="TabStyle" parent="TextViewBaseStyle">
+        <item name="android:textColor">@drawable/tab_selector</item>
+    </style>
+
+    <style name="LayoutBaseTheme">
+        <item name="android:background">@drawable/layout_bg</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textColor">@drawable/tab_menu_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="PopupAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/activity_translate_in</item>
+        <item name="android:windowExitAnimation">@anim/activity_translate_out</item>
+    </style>
+
+    <style name="PopupAnimation1" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+
+    <style name="TextAppearance.MaterialSheetFab.Sheet.Item" parent="">
+        <item name="android:layout_width">@dimen/sheet_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/sheet_item_spacing</item>
+        <item name="android:paddingTop">@dimen/sheet_item_spacing</item>
+        <item name="android:paddingBottom">@dimen/sheet_item_spacing</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/sheet_item_textsize</item>
+        <item name="android:textColor">@color/text_black_87</item>
+        <item name="android:drawablePadding">@dimen/sheet_item_image_spacing</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog"><!--name是我们在使用时要用到的资源的标志，parent是指当前的样式所继承的父类样式-->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item><!--隐藏标题栏-->
+        <item name="android:background">@color/white</item>
+        <item name="android:windowBackground">@color/transparent
+        </item><!--这儿也很重要啊，我这儿用了一张透明的.9.png的图，当然用#00000000也是可以的，否则的话这儿出来后有一个黑色的背景-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--HanbaseActivity的主题-->
+    <style name="MyTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:dropDownListViewStyle">@style/listview</item>
+        <item name="android:textAppearanceLargePopupMenu">
+            @style/TextAppearance.AppCompat.Widget.DropDownItem
+        </item>
+        <item name="android:listDivider">@drawable/divider_bg</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="colorPrimaryDark">@color/mytitle_bg_color</item>-->
+        <item name="android:listPopupWindowStyle">@style/list_popupwindow_style</item>
+    </style>
+
+    <style name="list_popupwindow_style" parent="Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:popupElevation">1dp</item>
+    </style>
+
+    <style name="listview">
+        <item name="android:divider">@drawable/divider_hetongxiangqing</item>
+        <item name="android:dividerHeight">0.5dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="PopDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="MaterialCartPopAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/material_cart_pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/material_cart_pop_exit</item>
+    </style>
+
+    <style name="ColorChooseRadioButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:background">@drawable/color_choose_rb_bg</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MaterialFormLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="MaterialMasterItemTextStyle" parent="TextViewBaseStyle">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="water_meter_save_textview">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/activity_sycnhouse_button</item>
+    </style>
+
+</resources>

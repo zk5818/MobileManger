@@ -1,0 +1,227 @@
+<resources>
+    <string name="app_name">门店管理</string>
+
+    <!--tabs.xml-->
+    <string name="home">首页</string>
+    <string name="message">账单</string>
+    <string name="profile">我的</string>
+
+    <!--iconfont-->
+    <string name="home_icon">&#xe616;</string>
+    <string name="msg_icon">&#xe61a;</string>
+    <string name="profile_icon">&#xe625;</string>
+    <string name="add_icon">&#xe60c;</string>
+    <string name="manage_icon">&#xe62e;</string>
+    <string name="setting_icon">&#xe615;</string>
+    <string name="info_icon">&#xe60f;</string>
+    <string name="cart_icon">&#xe815;</string>
+    <string-array name="menu_names">
+        <item>通讯录</item>
+        <item>待办任务</item>
+        <item>费用报销</item>
+        <item>通知公告</item>
+        <item>工作报告</item>
+        <item>流程审批</item>
+        <item>公司新闻</item>
+        <item>客户管理</item>
+        <item>ERP</item>
+        <item>报销单据</item>
+    </string-array>
+    <string-array name="erpruku">
+         
+        <item>采购入库</item>
+         
+        <item>自产入库</item>
+    </string-array>
+    <string-array name="menu_icons">
+        <item>&#xe62d;</item>
+        <item>&#xe641;</item>
+        <item>&#xe60a;</item>
+        <item>&#xe638;</item>
+        <item>&#xe642;</item>
+        <item>&#xe65b;</item>
+        <item>&#xe62a;</item>
+        <item>&#xe652;</item>
+        <item>&#xe637;</item>
+        <item>&#xe62a;</item>
+    </string-array>
+
+    <!--login.xml-->
+    <string name="user_id">请输入工号..</string>
+    <string name="password">请输入密码..</string>
+    <string name="login">登录</string>
+
+
+    <string-array name="is_passed">
+        <item>未审核审批</item>
+        <item>不同意</item>
+        <item>同意</item>
+    </string-array>
+
+    <string name="camera_icon">&#xe605;</string>
+    <string name="traffic_tool">交通工具</string>
+    <string-array name="traffic_tools">
+        <item>汽车</item>
+        <item>火车</item>
+        <item>飞机</item>
+        <item>出租车</item>
+    </string-array>
+
+    <!--报销票据模块 -->
+    <string name="withphoto">已关联</string>
+    <string name="withoutphoto">待关联</string>
+
+    <drawable name="clr_normal">@color/color_181818</drawable>
+    <drawable name="clr_pressed">@color/purplelight</drawable>
+
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="title_activity_base_choice">BaseChoiceActivity</string>
+
+    <string-array name="cprk_type_out">
+        <item>请选择..</item>
+        <item>生产出库</item>
+        <item>发放出库</item>
+        <item>售后出库</item>
+    </string-array>
+
+
+    <!-- 以下成品管理String -->
+    <string name="product">成品管理</string>
+    <string name="product_in">成品入库</string>
+    <string name="product_out">成品出库</string>
+    <string name="product_make">成品加工</string>
+    <string name="product_store">成品库存</string>
+    <string name="product_ticket">业务票据</string>
+    <string name="product_remark">备    注</string>
+    <string name="product_add_in">选商品</string>
+    <string name="product_create_in">创建入库单</string>
+    <string name="product_create_out">创建出库单</string>
+    <string name="product_create_make">创建加工单</string>
+    <string name="product_make_demo">加工材料模板</string>
+    <string name="product_add">添加产品</string>
+    <string name="product_search_hint">品名/货号</string>
+    <string name="product_remark_hint">选填</string>
+    <string name="product_filter">筛选</string>
+    <string name="product_in_sum">入库总数</string>
+    <string name="product_finish">完成</string>
+    <string name="product_in_type">入库方式</string>
+    <string name="product_out_type">出库方式</string>
+    <string name="product_search_hit">品名/货号</string>
+    <string name="product_del_icon">&#xe614;</string>
+    <string name="product_listview_icon">&#xe62f;</string>
+    <string name="product_in_title">入库单</string>
+    <string name="product_out_title">出库单</string>
+    <string name="product_No">单号</string>
+    <string name="product_in_user">入库人员</string>
+    <string name="product_Time">创建时间</string>
+    <string name="product_make_no">加工单号</string>
+    <string name="product_rightarrow_icon">&#xe621;</string>
+    <string name="in_list">入库列表</string>
+    <string name="in_info">入库信息</string>
+    <string name="product_name">货品</string>
+    <string name="product_Id">货号</string>
+    <string name="product_sepc">规格</string>
+    <string name="product_unit">单位</string>
+    <string name="product_color">颜色</string>
+    <string name="product_batch">批次</string>
+    <string name="product_location">货位</string>
+    <string name="out_list">出库列表</string>
+    <string name="out_info">出库信息</string>
+    <string name="product_transit_icon">&#xe63c;</string>
+    <string name="product_out_title_user">出库人员</string>
+    <string name="product_out_title_type">出库类型</string>
+    <string name="product_select">请选择</string>
+
+
+    <string-array name="product_in_array">
+        <item>请选择</item>
+        <item>生产入库</item>
+        <item>退货入库</item>
+        <item>维修入库</item>
+        <item>其他入库</item>
+    </string-array>
+    <string-array name="product_location">
+        <item>陈品</item>
+        <item>陈品1</item>
+    </string-array>
+    <string-array name="product_out_array">
+        <item>请选择</item>
+        <item>发放出库</item>
+        <item>生产出库</item>
+        <item>维修出库</item>
+        <item>试用出库</item>
+        <item>在途出库</item>
+    </string-array>
+    <!-- 以上成品管理String -->
+
+    <!-- 以下半成品管理String -->
+    <string name="half_product">半成品管理</string>
+    <string name="half_product_in">半成品入库</string>
+    <string name="half_product_out">半成品出库</string>
+    <string name="half_product_make">半成品加工</string>
+    <string name="half_product_store">半成品库存</string>
+    <string name="half_product_ticket">半业务票据</string>
+    <string name="half_product_remark">备注</string>
+    <string name="half_product_add_in">添加入库产品</string>
+    <string name="half_product_search_in">品号/货号</string>
+    <string name="half_product_create_in">创建入库单</string>
+    <string name="half_product_create_out">创建出库单</string>
+    <string name="half_product_search_hint">品名/货号</string>
+    <string name="half_product_remark_hint">选填</string>
+    <string name="half_product_filter">筛选</string>
+    <string name="half_product_in_sum">入库总数</string>
+    <string name="half_product_finish">完成</string>
+    <!-- 以上半成品管理String -->
+
+    <!--原料采购入库类型 dingyue-->
+    <string-array name="material_in_type">
+        <item>请选择</item>
+        <item>采购入库</item>
+    </string-array>
+
+    <!--原料颜色 dingyue-->
+    <string-array name="material_color">
+        <item>请选择</item>
+        <item>红色</item>
+        <item>橙色</item>
+        <item>黄色</item>
+        <item>绿色</item>
+        <item>青色</item>
+        <item>蓝色</item>
+        <item>紫色</item>
+    </string-array>
+
+    <!--原料出库类型 dingyue-->
+    <string-array name="material_out_type">
+        <item>请选择</item>
+        <item>半成品出库</item>
+        <item>成品出库</item>
+    </string-array>
+
+    <!--货位 dingyue-->
+    <string-array name="material_location">
+        <item>请选择</item>
+        <item>原料货位(A1)</item>
+        <item>原料货位(A2)</item>
+        <item>原料货位(A3)</item>
+    </string-array>
+
+    <!--原料出库货架 dingyue-->
+    <string-array name="material_out_shelf">
+        <item>请选择</item>
+        <item>货架1</item>
+        <item>货架2</item>
+        <item>货架3</item>
+        <item>货架4</item>
+        <item>货架5</item>
+    </string-array>
+</resources>

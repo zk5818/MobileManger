@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItem_house"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c_6DC8D3"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/house_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:text="莲花佳苑C块 102室 001房间"
+        android:textColor="@color/c_585B5E" />
+
+
+</LinearLayout>

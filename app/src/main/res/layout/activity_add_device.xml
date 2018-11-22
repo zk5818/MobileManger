@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kery.mobilemanager.activity.AddDeviceActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/app3_linear_container1"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/app3_50dp">
+
+            <LinearLayout
+                style="@style/app3_linear_container2">
+
+                <LinearLayout
+                    style="@style/hetongxiangqing_linearlayout"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/h1"
+                        style="@style/app3_left_text"
+                        android:minWidth="@dimen/left_text_width"
+                        android:text="入店日期 *" />
+
+                    <TextView
+                        style="@style/hetongxiangqing_edittext"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:hint="请选择入店日期"
+                        android:textColor="@color/c_737373" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hetongxiangqing_linearlayout"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/h2"
+                        style="@style/app3_left_text"
+                        android:minWidth="@dimen/left_text_width"
+                        android:text="产品类型 *" />
+
+                    <TextView
+                        android:id="@+id/proType"
+                        style="@style/hetongxiangqing_edittext"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:hint="请选择产品类型"
+                        android:textColor="@color/c_737373" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llShouldSolveTime"
+                    style="@style/hetongxiangqing_linearlayout"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/h3"
+                        style="@style/app3_left_text"
+                        android:minWidth="@dimen/left_text_width"
+                        android:text="产品名称 *" />
+
+                    <EditText
+                        android:id="@+id/etRentName"
+                        style="@style/hetongxiangqing_edittext"
+                        android:editable="true"
+                        android:enabled="true"
+                        android:hint="请输入产品名称"
+                        android:textColor="@color/c_737373" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hetongxiangqing_linearlayout"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/h4"
+                        style="@style/app3_left_text"
+                        android:minWidth="@dimen/left_text_width"
+                        android:text="产品编号" />
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        style="@style/hetongxiangqing_edittext"
+                        android:editable="true"
+                        android:enabled="true"
+                        android:hint="默认为今日日期，格式：20081212"
+                        android:textColor="@color/c_737373" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/hetongxiangqing_linearlayout"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/h5"
+                        style="@style/app3_left_text"
+                        android:minWidth="@dimen/left_text_width"
+                        android:text="单价 *" />
+
+                    <EditText
+                        style="@style/hetongxiangqing_edittext"
+                        android:editable="true"
+                        android:enabled="true"
+                        android:hint="请输入入店成本价"
+                        android:textColor="@color/c_737373" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hetongxiangqing_linearlayout"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/h6"
+                        style="@style/app3_left_text"
+                        android:minWidth="@dimen/left_text_width"
+                        android:text="数量 *" />
+
+                    <EditText
+                        style="@style/hetongxiangqing_edittext"
+                        android:editable="true"
+                        android:enabled="true"
+                        android:hint="请输入数量"
+                        android:textColor="@color/c_737373" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hetongxiangqing_linearlayout"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/h7"
+                        style="@style/app3_left_text"
+                        android:minWidth="@dimen/left_text_width"
+                        android:text="总金额 *" />
+
+                    <EditText
+                        style="@style/hetongxiangqing_edittext"
+                        android:editable="true"
+                        android:enabled="true"
+                        android:hint="请输入总金额"
+                        android:textColor="@color/c_737373" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

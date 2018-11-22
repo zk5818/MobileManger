@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    ptr:cardElevation="2dp">
+    <!--app:cardBackgroundColor="#22000000"-->
+    <!--app:contentPaddingTop="@dimen/titlebar_paddingtop"-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/padding_right"
+        android:paddingRight="@dimen/padding_right">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@color/textcolor_3_black_1"
+            android:textSize="19sp" />
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_back"
+            android:tint="@color/textcolor_3_black_1" />
+
+
+        <FrameLayout
+            android:id="@+id/right_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/search_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerInside"
+                    android:tint="@color/textcolor_3_black_3" />
+
+                <ImageView
+                    android:id="@+id/right_pic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerInside"
+                    android:tint="@color/textcolor_3_black_3" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/right_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center"
+                android:textColor="@color/textcolor_titlebar_right" />
+        </FrameLayout>
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

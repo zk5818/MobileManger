@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--older titlebar  Text id-->
+    <item name="tvTitleId" format="integer" type="id">0x100</item>
+    <item name="tvOneId" format="integer" type="id">0x101</item>
+    <item name="tvTwoId" format="integer" type="id">0x102</item>
+    <!--返回 titlebar imgback-->
+    <item name="ivBackId" format="integer" type="id">0x103</item>
+    <item name="ivOneId" format="integer" type="id">0x104</item>
+    <item name="ivTwoId" format="integer" type="id">0x105</item>
+    <item name="vEmptyId" format="integer" type="id">0x106</item>
+    <!--自定义titleBar-->
+    <declare-styleable name="my_title_bar">
+        <attr name="show_back" format="boolean"/>
+        <attr name="show_img_one" format="boolean"/>
+        <attr name="show_img_two" format="boolean"/>
+        <attr name="show_text_one" format="boolean"/>
+        <attr name="show_text_Two" format="boolean"/>
+        <attr name="show_title" format="boolean"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="title_size" format="dimension"/>
+        <attr name="title_color" format="color"/>
+        <attr name="text_color" format="color"/>
+        <attr name="text_one" format="string"/>
+        <attr name="text_two" format="string"/>
+        <attr name="text_title" format="string"/>
+        <attr name="img_back" format="reference"/>
+        <attr name="img_one" format="reference"/>
+        <attr name="img_two" format="reference"/>
+        <attr name="bar_paddingLeft" format="dimension"/>
+        <attr name="bar_paddingRight" format="dimension"/>
+        <attr name="inner_padding" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>
